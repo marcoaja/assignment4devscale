@@ -1,4 +1,5 @@
 import { GiMoneyStack } from "react-icons/gi";
+import { GiTakeMyMoney } from "react-icons/gi";
 
 export const MoneyTotal = ({ transactions }) => {
   let totalIncome = 0;
@@ -29,7 +30,7 @@ export const MoneyTotal = ({ transactions }) => {
           Total Expenses
         </h1>
         <div className="flex justify-center items-center gap-4">
-          <GiMoneyStack className="text-5xl text-rose-700" />
+          <GiTakeMyMoney className="text-5xl text-rose-700" />
           <div className="font-bold text-rose-700 text-xl">
             Rp{Intl.NumberFormat("de-DE").format(totalExpenses)}
           </div>
