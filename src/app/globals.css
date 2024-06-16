@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input,
+  select {
+    @apply w-full border border-slate-200 py-2 pl-4 text-sm focus:border-indigo-400 focus:ring-4 focus:ring-indigo-200 rounded-lg transition duration-200;
+  }
+  label {
+    @apply block mb-1 text-slate-400 text-sm font-medium;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    appearance: textfield;
+  }
+}
